@@ -1,6 +1,6 @@
 # Material-Chat
 
-[Material UI](https://mui.com/)로 디자인한 React 채팅 웹사이트
+[**Material UI**](https://mui.com/)로 디자인한 **React** 채팅 웹사이트
 
 > ⚒️ 개발 중 ⚒️
 
