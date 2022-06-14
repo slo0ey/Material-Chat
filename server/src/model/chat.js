@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const chatSchema = new mongoose.Schema(
   {
@@ -7,8 +7,8 @@ const chatSchema = new mongoose.Schema(
     },
     contentType: {
       type: String,
-      enum: ["message", "image", "video", "emoji"],
-      default: "message",
+      enum: ['message', 'image', 'video', 'emoji'],
+      default: 'message',
     },
   },
   {
@@ -16,4 +16,4 @@ const chatSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("Chat", chatSchema);
+module.exports = mongoose.model('Chat', chatSchema);

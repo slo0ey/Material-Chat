@@ -1,20 +1,20 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const roomSchema = new mongoose.Schema({
   name: {
     type: String,
-    default: "",
+    default: '',
   },
   users: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+      ref: 'User',
     },
   ],
   lastChat: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Chat",
+    ref: 'Chat',
   },
 });
 
-module.exports = mongoose.model("Room", roomSchema);
+module.exports = mongoose.model('Room', roomSchema);
